@@ -10,6 +10,12 @@
     <Filter Include="src">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\socket">
+      <UniqueIdentifier>{7b24d228-d657-4a8e-a2aa-5d7bbfc83924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\net">
+      <UniqueIdentifier>{fdfdd075-9a1f-4253-972e-368991b4d433}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -21,6 +27,12 @@
     <ClCompile Include="..\Classes\MainScene.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\socket\socket.c">
+      <Filter>src\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\net\NetManager.cpp">
+      <Filter>src\net</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -30,6 +42,15 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\MainScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\socket\socket.h">
+      <Filter>src\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\net\NetManager.h">
+      <Filter>src\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameDefinitions.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

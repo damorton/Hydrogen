@@ -1,0 +1,8 @@
+#ifndef GAME_DEFINITIONS_H
+#define GAME_DEFINITIONS_H
+
+#define MAX_BUFFER_SIZE_SEND 20
+#define MAX_BUFFER_SIZE_RECV 50
+
+#endif 
+
