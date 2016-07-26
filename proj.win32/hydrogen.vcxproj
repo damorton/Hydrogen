@@ -148,6 +148,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\MainScene.cpp" />
     <ClCompile Include="..\Classes\net\NetManager.cpp" />
+    <ClCompile Include="..\Classes\objects\Fireball.cpp" />
     <ClCompile Include="..\Classes\socket\socket.c" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -156,6 +157,7 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\GameDefinitions.h" />
     <ClInclude Include="..\Classes\MainScene.h" />
     <ClInclude Include="..\Classes\net\NetManager.h" />
+    <ClInclude Include="..\Classes\objects\Fireball.h" />
     <ClInclude Include="..\Classes\socket\socket.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>

@@ -4,6 +4,7 @@
 #include "cocos2d.h"
 #include "net\NetManager.h"
 #include "GameDefinitions.h"
+#include "objects/Fireball.h"
 
 class MainScene : public cocos2d::Layer
 {
@@ -34,8 +35,10 @@ private:
 	int _iPlayerOneX, _iPlayerOneY;
 	int _iPlayerTwoX, _iPlayerTwoY;
 	cocos2d::Sprite *_PlayerOne;
-	
-
+	Fireball *_FireballA;
+	Fireball *_FireballB;
+	int _iFireballAX, _iFireballAY;
+	int _iFireballBX, _iFireballBY;
 };
 
 #endif // __MAIN_SCENE_H__

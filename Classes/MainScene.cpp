@@ -97,60 +97,58 @@ bool MainScene::init()
 	_iPlayerOneY = visibleSize.height / 2;
 	_iPlayerTwoX = 0;
 	_iPlayerTwoY = 0;
-
+	
 	_PlayerOne = cocos2d::Sprite::create("playerone.png");
-	_PlayerOne->setPosition(cocos2d::Vec2(_iPlayerOneX, _iPlayerOneY));
+	_PlayerOne->setPosition(cocos2d::Vec2(visibleSize.width / 2, _PlayerOne->getContentSize().height));
 	this->addChild(_PlayerOne);
+
+	// FireballA
+	_FireballA = Fireball::create("objects/fireballA.png");
+	_iFireballAX = _FireballA->getContentSize().width / 2;
+	_iFireballAY = 0;
+	_FireballA->setPosition(cocos2d::Vec2(_iFireballAX, _iFireballAY));
+	this->addChild(_FireballA);
+
+	// FireballB
+	_FireballB = Fireball::create("objects/fireballB.png");
+	_iFireballBX = visibleSize.width - _FireballB->getContentSize().width / 2;
+	_iFireballBY = 0;
+	_FireballB->setPosition(cocos2d::Vec2(_iFireballBX, _iFireballBY));
+	this->addChild(_FireballB);
+
     return true;
 }
 
 void MainScene::update(float dt)
 {
+	/*
+	// Move FireballA forward on touch
+	CCLOG("Updating fireballAs position");
+	_iFireballAY++;
+	_FireballA->setPosition(cocos2d::Vec2(_iFireballAX, _iFireballAY));
+
+	// Send a message to the server about fireballA
+	CCLOG("Sending message to the server");
+	std::string message = "{uid:001,value:w}";
+
+	sprintf(_cSendBuffer, "%s", message.c_str());
+	_NetManager->SendData(_cSendBuffer);
+	*/
+
 	_NetManager->ReadData(_cRecvBuffer, MAX_BUFFER_SIZE_RECV);
 	if (strcmp(_cRecvBuffer, "0") != 0)
-	{
-		CCLOG("Server response: %s", _cRecvBuffer);
+	{		
+		// Update fireballBs position according to the server
+		if (strcmp(_cRecvBuffer, "{uid:002,value:w}") == 0)
+		{
+			CCLOG("Server response: %s", _cRecvBuffer);
+			CCLOG("Updating fireballB position");
+			_iFireballBY += 10;
+			_FireballB->setPosition(cocos2d::Vec2(_iFireballBX, _iFireballBY));
+		}		
 
-		/* Player One */
-		if (strcmp(_cRecvBuffer, "{uid:001,value:w}") == 0)
-		{
-			CCLOG("PlayerOne moving Y++");
-			_iPlayerOneY += 5;
-		}
-		else if (strcmp(_cRecvBuffer, "{uid:001,value:a}\n") == 0)
-		{
-			_iPlayerOneX--;
-		}
-		else if (strcmp(_cRecvBuffer, "{uid:001,value:s}\n") == 0)
-		{
-			_iPlayerOneY--;
-		}
-		else if (strcmp(_cRecvBuffer, "{uid:001,value:d}\n") == 0)
-		{
-			_iPlayerOneX++;
-		}
-
-		/* Player Two */
-		if (strcmp(_cRecvBuffer, "{uid:002,value:w}\n") == 0)
-		{
-			_iPlayerTwoY++;
-		}
-		else if (strcmp(_cRecvBuffer, "{uid:002,value:a}\n") == 0)
-		{
-			_iPlayerTwoX--;
-		}
-		else if (strcmp(_cRecvBuffer, "{uid:002,value:s}\n") == 0)
-		{
-			_iPlayerTwoY--;
-		}
-		else if (strcmp(_cRecvBuffer, "{uid:002,value:d}\n") == 0)
-		{
-			_iPlayerTwoX++;
-		}
-
-
-		UpdatePlayerOne(_iPlayerOneX, _iPlayerOneY);
-		UpdatePlayerTwo(_iPlayerTwoX, _iPlayerTwoY);
+		//UpdatePlayerOne(_iPlayerOneX, _iPlayerOneY);
+		//UpdatePlayerTwo(_iPlayerTwoX, _iPlayerTwoY);
 	}	
 }
 
@@ -161,7 +159,13 @@ bool MainScene::onTouchBegan(Touch* touch, Event* event)
 
 void MainScene::onTouchEnded(Touch* touch, Event* event)
 {
-	CCLOG("Sending message...");
+	// Move FireballA forward on touch
+	CCLOG("Updating fireballAs position");
+	_iFireballAY += 10;
+	_FireballA->setPosition(cocos2d::Vec2(_iFireballAX, _iFireballAY));
+
+	// Send a message to the server about fireballA
+	CCLOG("Sending message to the server");
 	std::string message = "{uid:001,value:w}";
 
 	sprintf(_cSendBuffer, "%s", message.c_str());

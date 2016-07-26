@@ -28,8 +28,11 @@ typedef int socklen_t;
 #else
     
 #include <sys/socket.h>
+#include <sys/select.h>
 #include <netinet/in.h>
 #include <netdb.h>
+
+#define SSIZE_T size_t
 
 #endif
 

@@ -16,6 +16,9 @@
     <Filter Include="src\net">
       <UniqueIdentifier>{fdfdd075-9a1f-4253-972e-368991b4d433}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\objects">
+      <UniqueIdentifier>{7b05555b-0cd1-4361-bcfe-70da3c10b42a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -32,6 +35,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\net\NetManager.cpp">
       <Filter>src\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\objects\Fireball.cpp">
+      <Filter>src\objects</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +58,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\GameDefinitions.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\objects\Fireball.h">
+      <Filter>src\objects</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
