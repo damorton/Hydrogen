@@ -78,7 +78,7 @@ bool MainScene::init()
 	// Net Manager
 	std::unique_ptr<NetManager> netManager(new NetManager());
 	_NetManager = std::move(netManager);
-	_NetManager->Init("192.168.1.5", "5000");
+	_NetManager->Init("gameserver.bitbosh.com", "5000");
 
 	// Initialize buffers to null
 	_cSendBuffer[0] = '\0';
