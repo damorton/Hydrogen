@@ -2,7 +2,7 @@
 #define __MAIN_SCENE_H__
 
 #include "cocos2d.h"
-#include "net\NetManager.h"
+#include "net/NetManager.h"
 #include "GameDefinitions.h"
 #include "objects/Fireball.h"
 
@@ -28,6 +28,10 @@ public:
 	void UpdatePlayerTwo(int x, int y);
 
 private:
+    
+    cocos2d::Size _VisibleSize;
+    cocos2d::Vec2 _Origin;
+    
 	std::unique_ptr<NetManager> _NetManager;
 
 	char _cSendBuffer[MAX_BUFFER_SIZE_SEND];

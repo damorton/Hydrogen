@@ -31,6 +31,7 @@ typedef int socklen_t;
 #include <sys/select.h>
 #include <netinet/in.h>
 #include <netdb.h>
+#include <unistd.h>
 
 #define SSIZE_T size_t
 

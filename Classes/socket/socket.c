@@ -3,7 +3,7 @@ Copyright (c) 2016 David Morton
 
 https://github.com/damorton/libsocket.git
 */
-#include "socket/socket.h"
+#include "../socket/socket.h"
 #include <string.h> // memcpy()
 #include <fcntl.h>
 

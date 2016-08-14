@@ -1,9 +1,9 @@
-#include "net/NetManager.h"
+#include "../net/NetManager.h"
 
 #include <cstring> // strlen()
 #include <iostream>
 
-#include "socket/socket.h" // libsocket
+#include "../socket/socket.h" // libsocket
 #include "cocos2d.h"
 
 NetManager::NetManager()

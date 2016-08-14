@@ -124,7 +124,8 @@ endif( WIN32 )
 
 set(GAME_SRC
   Classes/AppDelegate.cpp
-  Classes/HelloWorldScene.cpp
+  Classes/MainScene.cpp
+  Classes/net/NetManager.cpp
   ${PLATFORM_SPECIFIC_SRC}
 )
 
