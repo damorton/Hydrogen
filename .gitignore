@@ -71,7 +71,7 @@ proj.ios_mac/.gitignore
 # Xcode
 # ================
 .DS_Store
-build/
+#build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -109,7 +109,7 @@ proj.win32/.gitignore
 [Dd]ebug/
 [Rr]elease/
 x64/
-build/
+#build/
 [Bb]in/
 [Oo]bj/
 
