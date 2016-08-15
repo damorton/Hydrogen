@@ -1,0 +1,3 @@
+[submodule "lib/socket"]
+	path = lib/socket
+	url = git@bitbucket.org:damorton/socket.git

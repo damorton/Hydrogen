@@ -53,12 +53,12 @@
 		521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6219F0C34300D177D7 /* Default-667h@2x.png */; };
 		521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6319F0C34300D177D7 /* Default-736h@3x.png */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
+		5C0CBF361D6260EB00104E0C /* socket.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C0CBF341D6260EB00104E0C /* socket.c */; };
+		5C0CBF371D6260EB00104E0C /* socket.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C0CBF341D6260EB00104E0C /* socket.c */; };
 		5C5ACF2C1D60CA42000EF3FD /* NetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C5ACF241D60CA42000EF3FD /* NetManager.cpp */; };
 		5C5ACF2D1D60CA42000EF3FD /* NetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C5ACF241D60CA42000EF3FD /* NetManager.cpp */; };
 		5C5ACF2E1D60CA42000EF3FD /* Fireball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C5ACF271D60CA42000EF3FD /* Fireball.cpp */; };
 		5C5ACF2F1D60CA42000EF3FD /* Fireball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C5ACF271D60CA42000EF3FD /* Fireball.cpp */; };
-		5C5ACF301D60CA42000EF3FD /* socket.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C5ACF2A1D60CA42000EF3FD /* socket.c */; };
-		5C5ACF311D60CA42000EF3FD /* socket.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C5ACF2A1D60CA42000EF3FD /* socket.c */; };
 		5C5ACF601D60CBCA000EF3FD /* fireball in Resources */ = {isa = PBXBuildFile; fileRef = 5C5ACF5D1D60CBCA000EF3FD /* fireball */; };
 		5C5ACF611D60CBCA000EF3FD /* fireball in Resources */ = {isa = PBXBuildFile; fileRef = 5C5ACF5D1D60CBCA000EF3FD /* fireball */; };
 		5C5ACF621D60CBCA000EF3FD /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 5C5ACF5E1D60CBCA000EF3FD /* fonts */; };
@@ -171,12 +171,12 @@
 		521A8E6219F0C34300D177D7 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		521A8E6319F0C34300D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		5C0CBF341D6260EB00104E0C /* socket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = socket.c; sourceTree = "<group>"; };
+		5C0CBF351D6260EB00104E0C /* socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket.h; sourceTree = "<group>"; };
 		5C5ACF241D60CA42000EF3FD /* NetManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetManager.cpp; sourceTree = "<group>"; };
 		5C5ACF251D60CA42000EF3FD /* NetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
 		5C5ACF271D60CA42000EF3FD /* Fireball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fireball.cpp; sourceTree = "<group>"; };
 		5C5ACF281D60CA42000EF3FD /* Fireball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fireball.h; sourceTree = "<group>"; };
-		5C5ACF2A1D60CA42000EF3FD /* socket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = socket.c; sourceTree = "<group>"; };
-		5C5ACF2B1D60CA42000EF3FD /* socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket.h; sourceTree = "<group>"; };
 		5C5ACF5D1D60CBCA000EF3FD /* fireball */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fireball; sourceTree = "<group>"; };
 		5C5ACF5E1D60CBCA000EF3FD /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		5C5ACF5F1D60CBCA000EF3FD /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
@@ -281,6 +281,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				5C0CBF321D6260EB00104E0C /* lib */,
 				46880B8319C43A87006E1F66 /* Classes */,
 				46880B7519C43A67006E1F66 /* Resources */,
 				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
@@ -344,7 +345,6 @@
 			children = (
 				5C5ACF231D60CA42000EF3FD /* net */,
 				5C5ACF261D60CA42000EF3FD /* objects */,
-				5C5ACF291D60CA42000EF3FD /* socket */,
 				5CEEA0311D60B684008B015E /* GameDefinitions.h */,
 				5CEEA0321D60B684008B015E /* MainScene.cpp */,
 				5CEEA0331D60B684008B015E /* MainScene.h */,
@@ -402,6 +402,24 @@
 			path = ios;
 			sourceTree = SOURCE_ROOT;
 		};
+		5C0CBF321D6260EB00104E0C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				5C0CBF331D6260EB00104E0C /* socket */,
+			);
+			name = lib;
+			path = ../lib;
+			sourceTree = "<group>";
+		};
+		5C0CBF331D6260EB00104E0C /* socket */ = {
+			isa = PBXGroup;
+			children = (
+				5C0CBF341D6260EB00104E0C /* socket.c */,
+				5C0CBF351D6260EB00104E0C /* socket.h */,
+			);
+			path = socket;
+			sourceTree = "<group>";
+		};
 		5C5ACF231D60CA42000EF3FD /* net */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,15 +436,6 @@
 				5C5ACF281D60CA42000EF3FD /* Fireball.h */,
 			);
 			path = objects;
-			sourceTree = "<group>";
-		};
-		5C5ACF291D60CA42000EF3FD /* socket */ = {
-			isa = PBXGroup;
-			children = (
-				5C5ACF2A1D60CA42000EF3FD /* socket.c */,
-				5C5ACF2B1D60CA42000EF3FD /* socket.h */,
-			);
-			path = socket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -588,7 +597,7 @@
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				5C5ACF2E1D60CA42000EF3FD /* Fireball.cpp in Sources */,
-				5C5ACF301D60CA42000EF3FD /* socket.c in Sources */,
+				5C0CBF361D6260EB00104E0C /* socket.c in Sources */,
 				5C5ACF2C1D60CA42000EF3FD /* NetManager.cpp in Sources */,
 				5CEEA0371D60B684008B015E /* MainScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
@@ -603,7 +612,7 @@
 			files = (
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				5C5ACF2D1D60CA42000EF3FD /* NetManager.cpp in Sources */,
-				5C5ACF311D60CA42000EF3FD /* socket.c in Sources */,
+				5C0CBF371D6260EB00104E0C /* socket.c in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				5C5ACF2F1D60CA42000EF3FD /* Fireball.cpp in Sources */,
 				5CEEA0381D60B684008B015E /* MainScene.cpp in Sources */,
@@ -787,8 +796,10 @@
 					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-I$(SRCROOT)/../lib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -817,8 +828,9 @@
 					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_CFLAGS = "-I$(SRCROOT)/../lib";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				VALIDATE_PRODUCT = YES;

@@ -3,7 +3,7 @@
 #include <cstring> // strlen()
 #include <iostream>
 
-#include "../socket/socket.h" // libsocket
+#include "socket/socket.h"
 #include "cocos2d.h"
 
 NetManager::NetManager()
