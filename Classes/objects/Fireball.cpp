@@ -1,4 +1,4 @@
-#include "../objects/Fireball.h"
+#include "objects/Fireball.h"
 
 Fireball::~Fireball() {}
 

@@ -1,4 +1,4 @@
-#include "../net/NetManager.h"
+#include "net/NetworkSingleton.h"
 
 #include <cstring> // strlen()
 #include <iostream>
