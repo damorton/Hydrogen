@@ -3,7 +3,7 @@
 
 #include "cocos2d.h"
 
-class Fireball : public cocos2d::Sprite 
+class Fireball : public cocos2d::Sprite
 {
 public:
 	virtual ~Fireball();
