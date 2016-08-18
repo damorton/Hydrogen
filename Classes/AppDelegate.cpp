@@ -41,6 +41,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
         //glview = GLViewImpl::createWithRect("Hydrogen", cocos2d::Rect(0, 0, designResolutionSize.width, designResolutionSize.height));
         glview = GLViewImpl::create("Hydrogen");
+        //glview = GLViewImpl::createWithFullScreen("Hydrogen");
 #else
         glview = GLViewImpl::create("Hydrogen");
 #endif
