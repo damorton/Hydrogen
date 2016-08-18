@@ -156,4 +156,4 @@ ipch/
 # Visual Studio profiler
 *.psess
 *.vsp
-*.vspxworkspace
+*.vspx
