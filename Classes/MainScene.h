@@ -107,6 +107,9 @@ public:
 	virtual bool onTouchBegan(cocos2d::Touch*, cocos2d::Event*);
     virtual void onTouchMoved(cocos2d::Touch*, cocos2d::Event*);
 	virtual void onTouchEnded(cocos2d::Touch*, cocos2d::Event*);
+    
+    // Print x, y, z values using CCLOG()
+    void PrintLocation(std::string message, float x, float y, float z);
 
 private:
     
@@ -122,7 +125,16 @@ private:
 	char _cSendBuffer[MAX_BUFFER_SIZE_SEND];
 	char _cRecvBuffer[MAX_BUFFER_SIZE_RECV];
 	
+    enum _eOrcState {
+        ORC_IDLE,
+        ORC_FORWARD
+    };
+    
     cocos2d::Sprite3D *_Orc;
+    float _headingAngle;
+    cocos2d::Vec3 _headingAxis;
+    cocos2d::Vec3 _targetPos;
+    int _OrcState;
 
     Fireball *_FireballA;
     Fireball *_FireballB;
@@ -132,6 +144,8 @@ private:
     cocos2d::Camera *_Camera;
     
     cocos2d::DrawNode3D *_drawGrid;
+    
+    cocos2d::Terrain *_terrain;
 };
 
 #endif // __MAIN_SCENE_H__

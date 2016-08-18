@@ -61,6 +61,8 @@
 		5C0CBF441D62791900104E0C /* UILayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C0CBF411D62791900104E0C /* UILayer.cpp */; };
 		5C0CD76C1D63CB2A00FB8CEE /* DrawNode3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C0CD76B1D63CB2900FB8CEE /* DrawNode3D.cpp */; };
 		5C0CD76D1D63CB2A00FB8CEE /* DrawNode3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C0CD76B1D63CB2900FB8CEE /* DrawNode3D.cpp */; };
+		5C5A27A51D6510D600D51630 /* Terrain in Resources */ = {isa = PBXBuildFile; fileRef = 5C5A27A41D6510D600D51630 /* Terrain */; };
+		5C5A27A61D6510D600D51630 /* Terrain in Resources */ = {isa = PBXBuildFile; fileRef = 5C5A27A41D6510D600D51630 /* Terrain */; };
 		5C5ACF2E1D60CA42000EF3FD /* Fireball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C5ACF271D60CA42000EF3FD /* Fireball.cpp */; };
 		5C5ACF2F1D60CA42000EF3FD /* Fireball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C5ACF271D60CA42000EF3FD /* Fireball.cpp */; };
 		5C5ACF601D60CBCA000EF3FD /* fireball in Resources */ = {isa = PBXBuildFile; fileRef = 5C5ACF5D1D60CBCA000EF3FD /* fireball */; };
@@ -182,6 +184,7 @@
 		5C0CBF411D62791900104E0C /* UILayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UILayer.cpp; sourceTree = "<group>"; };
 		5C0CBF421D62791900104E0C /* UILayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILayer.h; sourceTree = "<group>"; };
 		5C0CD76B1D63CB2900FB8CEE /* DrawNode3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrawNode3D.cpp; sourceTree = "<group>"; };
+		5C5A27A41D6510D600D51630 /* Terrain */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Terrain; sourceTree = "<group>"; };
 		5C5ACF271D60CA42000EF3FD /* Fireball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fireball.cpp; sourceTree = "<group>"; };
 		5C5ACF281D60CA42000EF3FD /* Fireball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fireball.h; sourceTree = "<group>"; };
 		5C5ACF5D1D60CBCA000EF3FD /* fireball */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fireball; sourceTree = "<group>"; };
@@ -329,6 +332,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5C5A27A41D6510D600D51630 /* Terrain */,
 				5C5ACF781D610874000EF3FD /* monguger.tga */,
 				5C5ACF791D610874000EF3FD /* orc_jump.c3t */,
 				5C5ACF7A1D610874000EF3FD /* orc.c3b */,
@@ -579,6 +583,7 @@
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
+				5C5A27A51D6510D600D51630 /* Terrain in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
 				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
@@ -592,6 +597,7 @@
 				5C5ACF651D60CBCA000EF3FD /* res in Resources */,
 				46880B8219C43A67006E1F66 /* HelloWorld.png in Resources */,
 				5CEEA0471D60B693008B015E /* MainBackground.png in Resources */,
+				5C5A27A61D6510D600D51630 /* Terrain in Resources */,
 				5C5ACF681D60D263000EF3FD /* GameBackground.png in Resources */,
 				5C5ACF7D1D610874000EF3FD /* monguger.tga in Resources */,
 				5CEEA04B1D60B693008B015E /* playerone.png in Resources */,

@@ -13,12 +13,14 @@ LOCAL_MODULE_FILENAME := libcocos2dcpp
 LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/AppDelegate.cpp \
                    ../../Classes/MainScene.cpp \
-                   ../../Classes/net/NetManager.cpp \
-                   ../../Classes/socket/socket.c \
-                   ../../Classes/objects/Fireball.cpp
+                   ../../Classes/DrawNode3D.cpp \
+                   ../../Classes/net/NetworkSingleton.cpp \
+                   ../../Classes/objects/Fireball.cpp \
+                   ../../Classes/layer/UILayer.cpp \
+                   ../../lib/socket/socket.c 
 
-LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
-
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes \
+					$(LOCAL_PATH)/../../lib
 # _COCOS_HEADER_ANDROID_BEGIN
 # _COCOS_HEADER_ANDROID_END
 
