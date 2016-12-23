@@ -112,7 +112,8 @@ bool MainScene::init()
     // TODO: Needs to a singleton object
 	std::unique_ptr<NetManager> netManager(new NetManager());
 	_NetManager = std::move(netManager);
-	_NetManager->Init("gameserver.bitbosh.com", "5000");
+	//_NetManager->Init("gameserver.bitbosh.com", "5000");
+  _NetManager->Init("127.0.0.1", "5000");
 
 	// Initialize buffers to null
 	_cSendBuffer[0] = '\0';
